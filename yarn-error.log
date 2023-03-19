@@ -1,0 +1,94 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  14.18.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@typescript-eslint%2feslint-plugin: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141517:19)
+      at Object.onceWrapper (events.js:519:28)
+      at ClientRequest.emit (events.js:400:28)
+      at TLSSocket.emitRequestTimeout (_http_client.js:790:9)
+      at Object.onceWrapper (events.js:519:28)
+      at TLSSocket.emit (events.js:412:35)
+      at TLSSocket.Socket._onTimeout (net.js:495:8)
+      at listOnTimeout (internal/timers.js:557:17)
+      at processTimers (internal/timers.js:500:7)
+
+npm manifest: 
+  {
+    "name": "node-live-project-backend-sq012-ilearn",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/decadevs/node-live-project-backend-sq012-ilearn.git",
+    "author": "Oluwaseyi <oluwaseyi.makinde@decagon.dev>",
+    "license": "MIT",
+    "scripts": {
+      "start": "nodemon dist/app.js",
+      "compile": "tsc -w",
+      "test": "jest",
+      "test:watch": "jest --watch"
+    },
+    "dependencies": {
+      "bcrypt": "^5.1.0",
+      "cookie-parser": "^1.4.6",
+      "dotenv": "^16.0.3",
+      "express": "^4.18.2",
+      "http-errors": "^2.0.0",
+      "joi": "^17.7.0",
+      "jsonwebtoken": "^8.5.1",
+      "morgan": "^1.10.0",
+      "nodemailer": "^6.8.0",
+      "nodemon": "^2.0.20",
+      "pg": "^8.8.0",
+      "sequelize": "^6.27.0",
+      "uuid": "^9.0.0"
+  
+    },
+    "devDependencies": {
+     "@types/nodemailer": "^6.4.6",
+      "@types/uuidv4": "^5.0.0",
+      "@types/bcrypt": "^5.0.0",
+      "@types/cookie-parser": "^1.4.3",
+      "@types/http-errors": "^2.0.1",
+      "@types/jest": "^29.2.4",
+      "@types/jsonwebtoken": "^8.5.9",
+      "@types/morgan": "^1.9.3",
+      "@types/uuid": "^9.0.0",
+      "@types/pg": "^8.6.5",
+      "@typescript-eslint/eslint-plugin": "^5.0.0",
+      "@typescript-eslint/parser": "^5.46.0",
+      "eslint": "^8.29.0",
+      "eslint-config-airbnb": "19.0.4",
+      "eslint-config-prettier": "^8.5.0",
+      "eslint-config-standard-with-typescript": "^23.0.0",
+      "eslint-plugin-import": "^2.25.3",
+      "eslint-plugin-jest": "^27.1.6",
+      "eslint-plugin-jsx-a11y": "^6.5.1",
+      "eslint-plugin-n": "^15.0.0",
+      "eslint-plugin-promise": "^6.0.0",
+      "eslint-plugin-react": "^7.28.0",
+      "eslint-plugin-react-hooks": "^4.3.0",
+      "husky": "^8.0.2",
+      "plugin": "^0.3.3",
+      "prettier": "^2.8.1",
+      "ts-jest": "^29.0.3",
+      "typescript": "^4.9.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
